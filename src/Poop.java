@@ -1,7 +1,7 @@
 import java.awt.*;
 
-    public class Background {
-        public String name;
+public class Poop {
+        //variables declaration section
         public int xpos;
         public int ypos;
         public int dx;
@@ -11,7 +11,8 @@ import java.awt.*;
         public boolean isAlive;
         public Rectangle rec;
 
-        public Background(int pXpos, int pYpos, int pDx, int pDy, int pWidth, int pHeight){
+        //constructor method
+        public Poop(int pXpos, int pYpos, int pDx, int pDy, int pWidth, int pHeight){
             xpos=pXpos;
             ypos=pYpos;
             dx=pDx;
@@ -22,18 +23,11 @@ import java.awt.*;
             rec = new Rectangle(xpos, ypos, width, height);
         }
 
-        public void wrappingMove() {
-            if (xpos < -980) {
-                xpos =1000;
-                System.out.println("city xpos: "+ xpos);
-            }
+        public void move(){
             ypos=ypos+dy;
             xpos=xpos+dx;
             //this updates the rectangle location
             rec = new Rectangle(xpos, ypos, width, height);
-
         }
-
     }
-
 
