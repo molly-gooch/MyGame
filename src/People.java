@@ -20,7 +20,7 @@ public class People {
         width=pWidth;
         height=pHeight;
         isAlive=true;
-        rec = new Rectangle(xpos, ypos, width, height);
+        rec = new Rectangle(xpos, ypos, width/2, height);
     }
 
     public void wrappingMove(){

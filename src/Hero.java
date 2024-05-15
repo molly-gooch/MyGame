@@ -27,15 +27,15 @@ public class Hero {
         width=pWidth;
         height=pHeight;
         isAlive=true;
-        rec = new Rectangle(xpos, ypos, width, height);
+        rec = new Rectangle(xpos, ypos, width/2, height/2);
     }
 
     public void move(){//this is user control move method
         //horizontal movement
         if(rightPressed==true){
-            dx=2;
+            dx=4;
         }else if(leftPressed==true){
-            dx=-2;
+            dx=-4;
         }else{
             dx=0;
         }
